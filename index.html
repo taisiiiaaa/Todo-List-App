@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class12</title>
+    <script src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h2>TODO List</h2>
+        <h4>What's on your todo?</h4>
+        <form>
+            <div class="input_and_add">
+                <div class="input-and-button"></div>
+                <input type="text" placeholder="e.g. go shopping" id="input_field"> 
+                <button type="button" id="button_add">Add</button>
+                <select name="priority" id="priority">
+                    <option value="default" disabled selected>choose priority</option>
+                    <option value="Very low">Very low</option>
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                    <option value="Critical">Critical</option>
+                  </select>
+            </div>
+            <div class="errors">
+                <p class="task-error">The field is empty. Enter your todo</p>                  
+                <p class="priority-error">Please choose priority of task</p>
+            </div>
+        </form>
+        <ul id="task-list">
+            <div class="success-message-container"
+        </ul>
+    </div>
+</body>
+</html>
